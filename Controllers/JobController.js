@@ -93,8 +93,7 @@ export const jobUpdate = catchAsyncErrors(async (req, res, next) => {
   const { role } = req.user;
   if (role === "Job Seeker") {
     return next(
-      new ErrorHandler("Job Seeker is Not Allowed to Access Poster Jobs"),
-      400
+      new ErrorHandler("Job Seeker is Not Allowed to Access Poster Jobs", 400)
     );
   }
 

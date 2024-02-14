@@ -32,7 +32,7 @@ const applicationSchema = new mongoose.Schema({
       required: true,
     },
   },
-  applicant_id: {
+  applicantID: {
     user: {
       type: mongoose.Schema.ObjectId,
       ref: "User",
@@ -44,7 +44,7 @@ const applicationSchema = new mongoose.Schema({
       required: true,
     },
   },
-  employer_id: {
+  employerID: {
     user: {
       type: mongoose.Schema.ObjectId,
       ref: "User",
